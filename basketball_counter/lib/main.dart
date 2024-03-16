@@ -19,11 +19,11 @@ class _BasketballCounterState extends State<BasketballCounter> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.orange,
-          title: Text('Points Counter'),
+          title: const Text('Points Counter'),
         ),
         body: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Row(
@@ -31,7 +31,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
               children: [
                 Column(
                   children: [
-                    Text(
+                    const Text(
                       'Team A',
                       style: TextStyle(fontSize: 32),
                     ),
@@ -47,7 +47,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 1 Point',
                         style: TextStyle(color: Colors.black),
                       ),
@@ -60,7 +60,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 2 Point',
                         style: TextStyle(color: Colors.black),
                       ),
@@ -73,31 +73,31 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 3 Point',
                         style: TextStyle(color: Colors.black),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 400,
                   width: 100,
                   child: VerticalDivider(
-                    color: const Color(0xFFE2E2E2),
+                    color: Color(0xFFE2E2E2),
                     indent: 10,
                     thickness: 2,
                   ),
                 ),
                 Column(
                   children: [
-                    Text(
+                    const Text(
                       'Team A',
                       style: TextStyle(fontSize: 32),
                     ),
                     Text(
                       '$teamBPoints',
-                      style: TextStyle(fontSize: 200),
+                      style: const TextStyle(fontSize: 200),
                     ),
                     ElevatedButton(
                       onPressed: () {
@@ -107,7 +107,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 1 Point',
                         style: TextStyle(color: Colors.black),
                       ),
@@ -120,7 +120,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 2 Point',
                         style: TextStyle(color: Colors.black),
                       ),
@@ -133,7 +133,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange),
-                      child: Text(
+                      child: const Text(
                         'Add 3 Point',
                         style: TextStyle(color: Colors.black),
                       ),
@@ -142,7 +142,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Container(
@@ -156,7 +156,7 @@ class _BasketballCounterState extends State<BasketballCounter> {
                   });
                 },
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
-                child: Text(
+                child: const Text(
                   'Reset',
                   style: TextStyle(color: Colors.black),
                 ),
